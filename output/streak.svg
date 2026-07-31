@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes drawLine {
+      from { stroke-dashoffset: var(--path-length); }
+      to   { stroke-dashoffset: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { r: 4; opacity: 1; }
+      50%      { r: 6; opacity: 0.6; }
+    }
+    @keyframes growWidth {
+      from { width: 0; }
+    }
+    .fade-in         { animation: fadeIn 0.6s ease-out both; }
+    .fade-in-d1      { animation: fadeIn 0.6s ease-out 0.1s both; }
+    .fade-in-d2      { animation: fadeIn 0.6s ease-out 0.2s both; }
+    .fade-in-d3      { animation: fadeIn 0.6s ease-out 0.3s both; }
+    .slide-up        { animation: slideUp 0.5s ease-out both; }
+    .slide-up-d1     { animation: slideUp 0.5s ease-out 0.15s both; }
+    .slide-up-d2     { animation: slideUp 0.5s ease-out 0.30s both; }
+    .slide-up-d3     { animation: slideUp 0.5s ease-out 0.45s both; }
+    .slide-up-d4     { animation: slideUp 0.5s ease-out 0.60s both; }
+    .slide-up-d5     { animation: slideUp 0.5s ease-out 0.75s both; }
+  </style>
+<text x="123.75" y="44" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="normal" fill="#6e7681" text-anchor="middle" class="fade-in">Current Streak</text>
+<text x="371.25" y="44" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="normal" fill="#6e7681" text-anchor="middle" class="fade-in">Longest Streak</text>
+<text x="123.75" y="90" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="36" font-weight="bold" fill="#c9d1d9" text-anchor="middle" class="fade-in-d1">12</text>
+<text x="371.25" y="90" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="36" font-weight="bold" fill="#c9d1d9" text-anchor="middle" class="fade-in-d1">47</text>
+<text x="123.75" y="112" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="12" font-weight="normal" fill="#6e7681" text-anchor="middle" class="fade-in-d2">days</text>
+<text x="371.25" y="112" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="12" font-weight="normal" fill="#6e7681" text-anchor="middle" class="fade-in-d2">days</text>
+<text x="123.75" y="145" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="normal" fill="#6e7681" text-anchor="middle" class="fade-in-d3">Jul 20 – Aug 1</text>
+<text x="371.25" y="145" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="normal" fill="#6e7681" text-anchor="middle" class="fade-in-d3">Mar 2 – Apr 18</text>
+<line x1="247.5" y1="30" x2="247.5" y2="165" stroke="rgba(139, 148, 158, 0.25)" stroke-width="1"/>
+</svg>

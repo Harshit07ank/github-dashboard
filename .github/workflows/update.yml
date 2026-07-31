@@ -1,0 +1,36 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'    # Every 12 hours
+  workflow_dispatch:            # Manual trigger from Actions tab
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate stats SVGs
+        run: node src/index.js
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_USERNAME: Harshit07ank
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update github stats [skip ci]'
+          file_pattern: 'output/*.svg'

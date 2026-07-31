@@ -1,0 +1,22 @@
+{
+  "name": "github-stats",
+  "version": "1.0.0",
+  "description": "Premium GitHub statistics SVG card generator",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "generate": "node src/index.js"
+  },
+  "keywords": [
+    "github",
+    "stats",
+    "svg",
+    "readme",
+    "profile"
+  ],
+  "author": "Harshit Tyagi",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
